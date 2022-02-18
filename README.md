@@ -1,2 +1,2 @@
 # LispPL
-Lisp based programming languge
+Lisp based programming Language
