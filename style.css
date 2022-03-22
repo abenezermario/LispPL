@@ -1,16 +1,16 @@
 html,
 body {
-	margin: 0;
-	padding: 0;
-	position: relative;
-	line-height: 1.5;
-	/* font-size: 18pt; */
-	font-size: max(14pt, 1vw);
+  margin: 0;
+  padding: 0;
+  position: relative;
+  line-height: 1.5;
+  /* font-size: 18pt; */
+  font-size: max(14pt, 1vw);
 }
 blockquote {
-	border-left: 3px solid #000;
-	margin-left: calc(-0.75em - 3px);
-	padding-left: 0.75em;
+  border-left: 3px solid #000;
+  margin-left: calc(-0.75em - 3px);
+  padding-left: 0.75em;
 }
 div,
 ul,
@@ -23,230 +23,230 @@ button,
 input,
 textarea,
 img {
-	margin: 0;
-	padding: 0;
-	position: relative;
-	vertical-align: inherit;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
-	box-sizing: border-box;
-	font: inherit;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  vertical-align: inherit;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  font: inherit;
 }
 
 a,
 button,
 input,
 textarea {
-	background: inherit;
-	border: inherit;
-	color: inherit;
-	text-decoration: inherit;
-	outline: none;
+  background: inherit;
+  border: inherit;
+  color: inherit;
+  text-decoration: inherit;
+  outline: none;
 }
 input:not([type="button"]):not([type="submit"]),
 textarea {
-	width: 100%;
+  width: 100%;
 }
 
 a:focus,
 button:focus,
 input[type="button"]:focus,
 input[type="submit"]:focus {
-	animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
 }
 .pulse {
-	animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
 }
 @keyframes pulse {
-	0% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 0.5;
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 ul,
 ol,
 li {
-	padding: 0 1em;
+  padding: 0 1em;
 }
 
 p {
-	padding: 0;
+  padding: 0;
 }
 p + p {
-	padding-top: 0;
+  padding-top: 0;
 }
 
 [contenteditable="true"]:empty:before {
-	content: attr(placeholder);
+  content: attr(placeholder);
 }
 ::placeholder,
 .hint {
-	color: inherit;
-	opacity: 0.3;
+  color: inherit;
+  opacity: 0.3;
 }
 
 .model,
 .none {
-	display: none;
+  display: none;
 }
 .hide {
-	opacity: 0;
-	visibility: hidden;
-	transition: all 2s;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 2s;
 }
 
 .full {
-	width: 100%;
-	min-height: 100vh;
+  width: 100%;
+  min-height: 100vh;
 }
 .max {
-	max-width: 48em;
+  max-width: 48em;
 }
 .min {
-	min-width: 12em;
+  min-width: 12em;
 }
 .pad {
-	width: 95%;
-	margin: auto;
-	max-width: 48em;
-	min-width: 12em;
+  width: 95%;
+  margin: auto;
+  max-width: 48em;
+  min-width: 12em;
 }
 
 .row {
-	width: 100%;
+  width: 100%;
 }
 .row::after {
-	content: "";
-	display: block;
-	clear: both;
+  content: "";
+  display: block;
+  clear: both;
 }
 .col {
-	max-width: 24em;
-	min-width: 12em;
+  max-width: 24em;
+  min-width: 12em;
 }
 
 .center {
-	text-align: center;
-	vertical-align: middle;
-	margin-left: auto;
-	margin-right: auto;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
 }
 .right {
-	float: right;
-	text-align: right;
+  float: right;
+  text-align: right;
 }
 .left {
-	float: left;
-	text-align: left;
+  float: left;
+  text-align: left;
 }
 .mid {
-	margin-left: auto;
-	margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .top {
-	vertical-align: top;
+  vertical-align: top;
 }
 .low {
-	vertical-align: bottom;
+  vertical-align: bottom;
 }
 
 .rim {
-	margin: 1.5%;
+  margin: 1.5%;
 }
 .gap {
-	padding: 3%;
-	padding: clamp(1em, 2%, 1.5em);
+  padding: 3%;
+  padding: clamp(1em, 2%, 1.5em);
 }
 .stack {
-	line-height: 0;
+  line-height: 0;
 }
 .crack {
-	margin-bottom: 4%;
+  margin-bottom: 4%;
 }
 .sit {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .focus {
-	margin-left: auto;
-	margin-right: auto;
-	float: none;
-	clear: both;
-	outline: none;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  clear: both;
+  outline: none;
 }
 
 .leak {
-	overflow: visible;
+  overflow: visible;
 }
 .hold {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 .act {
-	/*display: block;*/
-	font-weight: normal;
-	text-decoration: none;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
-	cursor: pointer;
+  /*display: block;*/
+  font-weight: normal;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
 }
 
 .unit,
 .symbol {
-	display: inline-block;
-	vertical-align: inherit;
+  display: inline-block;
+  vertical-align: inherit;
 }
 .sap {
-	border-radius: 1.75em;
+  border-radius: 1.75em;
 }
 .sap-sm {
-	border-radius: 0.5em;
+  border-radius: 0.5em;
 }
 .jot {
-	border-bottom: 1px dashed #95b2ca;
+  border-bottom: 1px dashed #95b2ca;
 }
 
 .loud {
-	font-size: 150%;
+  font-size: 150%;
 }
 .shout {
-	font-size: 36pt;
-	font-size: 6.5vmax;
+  font-size: 36pt;
+  font-size: 6.5vmax;
 }
 
 .it {
-	background-color: #f0f0f0;
-	color: #000;
+  background-color: #f0f0f0;
+  color: #000;
 }
 
 @keyframes animateIn {
-	0% {
-		opacity: 0;
-		transform: scale(0.2) translateY(1em);
-	}
-	50% {
-		opacity: 1;
-		transform: scale(1.2) translateY(-0.5em);
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 0;
+    transform: scale(0.2) translateY(1em);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2) translateY(-0.5em);
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes animateOut {
-	0% {
-		opacity: 0;
-		transform: scale(0.2) translateY(1em);
-	}
-	50% {
-		opacity: 1;
-		transform: scale(1.2);
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 0;
+    transform: scale(0.2) translateY(1em);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+  }
 }
