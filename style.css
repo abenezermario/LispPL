@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   margin: 0;
@@ -5,7 +9,7 @@ body {
   position: relative;
   line-height: 1.5;
   /* font-size: 18pt; */
-  font-size: max(14pt, 1vw);
+  /* font-size: max(14pt, 1vw); */
 }
 blockquote {
   border-left: 3px solid #000;
@@ -21,7 +25,6 @@ span,
 form,
 button,
 input,
-textarea,
 img {
   margin: 0;
   padding: 0;
@@ -35,16 +38,14 @@ img {
 
 a,
 button,
-input,
-textarea {
+input {
   background: inherit;
   border: inherit;
   color: inherit;
   text-decoration: inherit;
   outline: none;
 }
-input:not([type="button"]):not([type="submit"]),
-textarea {
+input:not([type="button"]):not([type="submit"]) {
   width: 100%;
 }
 
@@ -249,4 +250,43 @@ p + p {
   100% {
     opacity: 1;
   }
+}
+
+.split {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.gutter {
+  background-color: #eee;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.gutter.gutter-horizontal {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==");
+  cursor: row-resize;
+}
+
+#container {
+  height: 100vh;
+  width: 100vw;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+#editor {
+  border: 1px solid #eee;
+  height: auto;
+}
+#terminal {
+  height: 100%;
+  /* display: inline-block; */
+}
+
+/* disable tag matching */
+.ace_editor .ace_marker-layer .ace_bracket {
+  display: none;
 }

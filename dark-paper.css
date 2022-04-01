@@ -7,6 +7,9 @@ html,
 * {
   font-family: "Nunito", sans-serif;
 }
+body {
+  margin: 0;
+}
 .huef {
   background: #4d79d8;
   -webkit-animation: huef 9s infinite;
@@ -1312,4 +1315,147 @@ kbd {
 }
 .txt-type > .txt {
   border-right: 0.2rem solid #707070;
+}
+.split {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.gutter {
+  background-color: #eee;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.gutter.gutter-horizontal {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==");
+  cursor: col-resize;
+}
+
+#container {
+  height: 100vh;
+  width: 100vw;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+#editor {
+  border: 1px solid #eee;
+  height: auto;
+}
+#terminal {
+  height: 100%;
+  /* display: inline-block; */
+}
+
+@keyframes animateIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.2) translateY(1em);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2) translateY(-0.5em);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animateOut {
+  0% {
+    opacity: 0;
+    transform: scale(0.2) translateY(1em);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.keyword {
+  color: #c792ea;
+}
+
+.operator {
+  color: #89ddff;
+}
+
+.variable-2 {
+  color: #eeffff;
+}
+
+.variable-3,
+.type {
+  color: #f07178;
+}
+
+.builtin {
+  color: #ffcb6b;
+}
+
+.atom {
+  color: #f78c6c;
+}
+
+.number {
+  color: #ff5370;
+}
+
+.def {
+  color: #82aaff;
+}
+
+.string {
+  color: #c3e88d;
+}
+
+.string-2 {
+  color: #f07178;
+}
+
+.comment {
+  color: #464b5d;
+}
+
+.variable {
+  color: #f07178;
+}
+
+.tag {
+  color: #ff5370;
+}
+
+.meta {
+  color: #ffcb6b;
+}
+
+.attribute {
+  color: #c792ea;
+}
+
+.property {
+  color: #c792ea;
+}
+
+.qualifier {
+  color: #decb6b;
+}
+
+.variable-3,
+.type {
+  color: #decb6b;
+}
+
+.error {
+  color: rgba(255, 255, 255, 1);
+  background-color: #ff5370;
+}
+
+.cm-s-material-ocean .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: white !important;
 }

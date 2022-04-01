@@ -6,10 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marda Studio</title>
     <script src="../gun/examples/jquery.js"></script>
-    <link rel="stylesheet" href="../style.css" />
+    <!-- <link rel="stylesheet" href="../style.css" /> -->
     <link id="theme" rel="stylesheet" href="../dark-paper.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/jquery.terminal@2.32.1/css/jquery.terminal.min.css"
+    />
     <!-- <link rel="stylesheet" href="./app.css" /> -->
-
+    <link rel="stylesheet" href="../lib/codemirror-5.65.2/lib/codemirror.css" />
+    <link
+      rel="stylesheet"
+      href="../lib/codemirror-5.65.2/theme/material-ocean.css"
+    />
+    <script src="../lib/codemirror-5.65.2/lib/codemirror.js"></script>
+    <script src="../lib/codemirror-5.65.2/addon/display/autorefresh.js"></script>
+    <script src="../lib/codemirror-5.65.2/addon/mode/simple.js"></script>
+    <script src="../lib/fun-mode.js"></script>
+    <script src="https://unpkg.com/jquery.terminal@2.32.1/js/jquery.terminal.min.js"></script>
+    <script src="https://unpkg.com/split.js/dist/split.min.js"></script>
     <script
       src="https://kit.fontawesome.com/478ca05d96.js"
       crossorigin="anonymous"
@@ -17,10 +31,15 @@
   </head>
 
   <body class="background whitet">
+    <div class="split">
+      <textarea id="editor"></textarea>
+      <div id="terminal"></div>
+    </div>
+
     <!-- <div id="player"
       style="position: fixed; width: 0.3em; height: 0.3em; background: white; left: 50%; top: 50%; border-radius: 100%;">
     </div> -->
-    <div class="hold">
+    <!-- <div class="hold">
       <div id="app" class="page full hold gap">
         <div
           id="content"
@@ -64,17 +83,17 @@
           </div>
         </div>
       </div>
-      <script src="../gun/gun.js"></script>
-      <script src="../gun/sea.js"></script>
-      <script src="../gun/lib/monotype.js"></script>
-      <script src="../gun/lib/normalize.js"></script>
-      <script src="../gun/lib/wave.js"></script>
-      <script src="../gun/lib/meta.js"></script>
-      <!-- <script src="./gun/as.js"></script> -->
-      <script src="../lib/joy.js"></script>
-      <script src="../lib/meta.ui.js"></script>
-      <script src="./index.js"></script>
-      <script></script>
-    </div>
+      </div> -->
+    <script src="../gun/gun.js"></script>
+    <script src="../gun/sea.js"></script>
+    <script src="../gun/lib/monotype.js"></script>
+    <script src="../gun/lib/normalize.js"></script>
+    <script src="../gun/lib/wave.js"></script>
+    <script src="../gun/lib/meta.js"></script>
+    <!-- <script src="./gun/as.js"></script> -->
+    <script src="../lib/joy.js"></script>
+    <script src="../lib/meta.ui.js"></script>
+    <script src="./index.js"></script>
+    <script src="../lib/test.js"></script>
   </body>
 </html>
