@@ -1346,6 +1346,7 @@ kbd {
 }
 #terminal {
   height: 100%;
+  background-color: #0f111a;
   /* display: inline-block; */
 }
 

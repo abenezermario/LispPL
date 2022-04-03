@@ -220,15 +220,7 @@ $(function () {
       combo: [-1, 13],
       on: (e) => {
         var c = window.code_editor.getValue();
-        console.log("pressed R");
-        var ast = parse(TokenStream(InputStream(c)));
-
-        // get JS code
-        var code = make_js(ast);
-
-        console.log(code);
-        var result = __EVAL(code);
-        window.term.echo(result);
+        runCode(c);
         // alert(window.code_editor.getValue());
       },
     });
