@@ -80,3 +80,9 @@ loop_through = fun(x, y)
 loop_through(1,5);
 
 ```
+# Let keyword
+
+```
+let (a = 1, b = 3, c = b * a) print(c);
+```
+
